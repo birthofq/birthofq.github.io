@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}}</title>
+  </head>
+  <body>
+    <p>{{content}}</p>
+    <ul>
+      {% for book in site.data.books %}
+      <li>
+        {{book.title}}, {{book.status}}
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

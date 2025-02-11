@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}}</title>
+  </head>
+  <body>
+    <p>{{content}}</p>
+    <ul>
+      {% for project in site.data.projects %}
+      <li>
+        {{project.name}} : {{project.desc}},
+        {{project.status}}
+        <a href="https://github.com/birthofq/{{project.link}}">
+          {{project.link}}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
