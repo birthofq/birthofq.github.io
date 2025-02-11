@@ -5,17 +5,23 @@
     <title>{{page.title}}</title>
   </head>
   <body>
+    <div>
+      {% include navigation.html %}
+    </div>
+    <h1>Projects 🧪</h1>
     <p>{{content}}</p>
-    <ul>
-      {% for project in site.data.projects %}
-      <li>
-        {{project.name}} : {{project.desc}},
-        {{project.status}}
-        <a href="https://github.com/birthofq/{{project.link}}">
-          {{project.link}}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
+    <div>
+      <ul>
+        {% for project in site.data.projects %}
+        <li>
+          <a href="https://www.github.com/{{project.link}}">
+            {{project.name}} :
+          </a>
+          <em>{{project.status}}</em>
+        </li>
+        <p>{{project.desc}}</p>
+        {% endfor %}
+      </ul>
+    </div>
   </body>
 </html>

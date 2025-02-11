@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}}</title>
+  </head>
+  <body>
+    <div>
+      {% include navigation.html %}
+    </div>
+    <div>
+        <img src="">
+        <p><em>{{page.catchphrase}}</em></p>
+        <hr>
+    </div>
+    <div>
+      {{content}}
+    </div>
+    <h2>Ongoing Projects</h2>
+    <ul>
+      {% for project in site.data.projects %}
+      {%- if project.status == ongoing -%}
+      <li>
+        <a href="https://www.github.com/{{project.link}}">
+          {{project.name}} :
+        </a>
+        <em>{{project.status}}</em>
+      </li>
+      <p>{{project.desc}}</p>
+      {%- endif -%}
+      {% endfor %}
+    </ul>
+  </body>
+</html>

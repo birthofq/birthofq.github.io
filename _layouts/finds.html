@@ -10,12 +10,13 @@
     </div>
     <p>{{content}}</p>
     <div>
-      <h2>Books</h2>
+      <h2>Links</h2>
       <ul>
-        {% for book in site.data.books %}
-        <li>{{book.title | capitalize}}:
-          {{book.desc}} ->
-           <em>{{book.status}}</em>
+        {% for link in site.data.links %}
+        <li>
+          <a href="https://www.{{link.url}}">
+            {{link.name}}
+          </a>
           </li>
           {% endfor %}
       </ul>

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 ---
 
-### this is a sample page for blog articles
+# Blogs
