@@ -7,5 +7,5 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-url: https://birthofq.github.io
-baseurl: /
+url: "https://birthofq.github.io"
+baseurl: "/birthofq.github.io"
