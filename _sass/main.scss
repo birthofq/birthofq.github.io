@@ -1,24 +1,409 @@
+// // * {
+// //   outline: 1px solid red;
+// // }
+
+// /* Global styles */
 // * {
-//   outline: 1px solid red;
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   font-family: 'Inter', sans-serif;
 // }
 
-body {
-  font-family: "Inter", serif;
-  font-optical-sizing: auto;
-  font-weight: 350;
-  font-size: 16px;
-  font-style: normal;
+// body {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 2rem;
+//   color: #000;
+//   line-height: 1.6;
+// }
+
+// /* Navigation styles */
+// .header-class {
+//   margin-bottom: 3rem;
+// }
+
+// .nav-class {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 1rem 0;
+// }
+
+// .nav-links a {
+//   text-decoration: none;
+//   color: #2563eb;
+//   margin-right: 1rem;  /* Reduced from 2rem to 1rem */
+//   font-size: 1.25rem;
+//   transition: color 0.3s ease;
+// }
+
+
+// .nav-links a:last-child {
+//   margin-right: 0;  /* Remove margin from last link */
+// }
+
+// .nav-links {
+//   display: flex;
+//   gap: 1.5rem;  /* Using gap for more consistent spacing */
+//   align-items: center;
+// }
+
+// .nav-links a.current {
+//   color: #000;
+// }
+
+// /* Header content */
+// .home-image {
+//   margin: 4rem 0;
+// }
+
+// .home-image hr {
+//   border: none;
+//   border-top: 1px solid #eee;
+//   margin: 2rem 0;
+// }
+
+// /* Main content */
+// .intro {
+//   margin-bottom: 4rem;
+// }
+
+// /* Heading underline styles */
+// h1 {
+//   font-size: 3.5rem;
+//   font-weight: 700;
+//   line-height: 1.2;
+//   margin-bottom: 1rem;
+//   position: relative;
+//   padding-bottom: 0.5rem;
+// }
+
+// h1::after {
+//   content: '';
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 200px;  /* Adjust this value to make the line longer/shorter */
+//   height: 1px;
+//   background-color: #000;
+// }
+
+// /* Responsive adjustment */
+// // @media (max-width: 768px) {
+// //   h1::after {
+// //     width: 150px;  /* Slightly shorter line on mobile */
+// //   }
+// // }
+
+// h2 {
+//   font-size: 2rem;
+//   font-weight: 600;
+//   margin-bottom: 1.5rem;
+// }
+
+// /* Links styling */
+// a {
+//   color: #2563eb;
+//   text-decoration: underline;
+//   transition: color 0.3s ease;
+// }
+
+// a:hover {
+//   color: #000;
+// }
+
+// /* Project list styling */
+// ul {
+//   list-style: none;
+//   margin-bottom: 2rem;
+// }
+
+// ul li {
+//   margin-bottom: 1rem;
+// }
+
+// ul li a {
+//   font-weight: 500;
+// }
+
+// ul li em {
+//   color: #666;
+//   font-style: normal;
+//   font-size: 0.9rem;
+// }
+
+// ul p {
+//   color: #444;
+//   margin-top: 0.5rem;
+//   font-size: 0.95rem;
+// }
+
+
+// /* Responsive design */
+// @media (max-width: 768px) {
+//   h1::after {
+//     width: 150px;  /* Slightly shorter line on mobile */
+//   }
+
+//   body {
+//     padding: 1rem;
+//   }
+
+//   h1 {
+//     font-size: 2.5rem;
+//   }
+
+//   .nav-links a {
+//     margin-right: 0.5rem;  /* Even smaller spacing on mobile */
+//     font-size: 0.9rem;
+//   }
+  
+//   .nav-links {
+//     gap: 1rem;  /* Reduced gap on mobile */
+//   }
+// }
+
+/* Global styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-a {
+body {
+  max-width: 1200px; /* Desktop max width */
+  font-size: 1.1rem;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* Navigation styles */
+.header-class {
+  margin-bottom: 3rem;
+}
+
+.nav-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  /* No wrap here, so we control it in the media query */
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links a {
   text-decoration: none;
-}
-a:hover{
-  text-decoration: underline;
+  color: #2563eb;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
 }
 
+.nav-links a:last-child {
+  margin-right: 0;
+}
+
+.nav-links a.current {
+  color: #000;
+}
+
+/* Header content */
+.home-image {
+  margin: 4rem 0;
+}
+
+.home-image hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 2rem 0;
+}
+
+/* Main content */
 .intro {
-  width: 500px;
+  margin-bottom: 4rem;
+}
+
+/* Heading underline styles */
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px; 
+  height: 1px;
+  background-color: #000;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Links styling */
+a {
+  color: #2563eb;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #000;
+}
+
+/* Blog or Project list styling */
+ul {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+ul li a {
+  font-weight: 500;
+}
+
+ul li em {
+  color: #666;
+  font-style: normal;
+  font-size: 0.9rem;
+}
+
+ul p {
+  color: #444;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* ----------------------------------
+   RESPONSIVE DESIGN
+---------------------------------- */
+@media (max-width: 768px) {
+  /* Let the nav wrap so it doesn't overflow horizontally */
+  .nav-class {
+    flex-wrap: wrap;
+  }
+
+  /* Override the desktop max-width so it fits smaller screens */
+  body {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h1::after {
+    width: 150px; /* Slightly shorter underline on mobile */
+  }
+
+  .nav-links {
+    gap: 1rem; /* Reduced gap on mobile */
+  }
+
+  .nav-links a {
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* Make sure blog text fits well on smaller screens */
+  ul {
+    padding: 0 0.5rem; /* Some horizontal padding */
+  }
+  ul li {
+    margin-bottom: 1rem;
+  }
+  ul li h3 {
+    font-size: 1.2rem;
+  }
+  ul li a {
+    font-size: 1rem;
+  }
+}
+
+/* Container that holds the image and text side by side */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;            /* Space between image & text */
+  margin-bottom: 3rem;  /* Some vertical spacing */
+}
+
+/* Style the image with curved edges */
+.profile-section img {
+  width: 250px;         /* Adjust as needed */
+  height: auto;
+  border-radius: 12px;  /* Curved corners */
+  object-fit: cover;    /* Ensures the image doesn't stretch */
+}
+
+/* On smaller screens, stack the image above the text */
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-content {
+  flex: 1;
+}
+
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a img {
+  width: 34px;
+  height: 34px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-links a:hover img {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .social-links {
+    justify-content: center; /* Centers the icons */
+    margin-top: 10px;
+  }
 }

@@ -10,17 +10,18 @@
     <title>{{page.title}}</title>
   </head>
   <body>
-    <div>
+    <div class="nav-links">
       {% include navigation.html %}
     </div>
     <p>{{content}}</p>
+    <br>
     <div>
       <h2>Books</h2>
       <ul>
         {% for book in site.data.books %}
-        <li>{{book.title | capitalize}}:
-          {{book.desc}} ->
-           <em>{{book.status}}</em>
+        <li>
+          <a href="">{{book.title | capitalize}}</a>: <em>{{book.status}}</em>
+          <p>{{book.desc}}</p>
           </li>
           {% endfor %}
       </ul>

@@ -10,11 +10,12 @@
     <title>{{page.title}}</title>
   </head>
   <body>
-    <div>
+    <div class="nav-links">
       {% include navigation.html %}
     </div>
     <h1>Projects 🧪</h1>
     <p>{{content}}</p>
+    <br>
     <div>
       <ul>
         {% for project in site.data.projects %}
@@ -23,8 +24,8 @@
             {{project.name}} :
           </a>
           <em>{{project.status}}</em>
-        </li>
         <p>{{project.desc}}</p>
+      </li>
         {% endfor %}
       </ul>
     </div>

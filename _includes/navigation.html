@@ -1,5 +1,5 @@
-<header>
-  <nav>
+<header class="header-class">
+  <nav class="nav-class">
     {% for nav in site.data.navigation %}
     <a href="{{nav.link}}" {% if page.url == nav.link %} class="nav-links" {%endif%}>{{nav.name}}</a>
     {%endfor%}

@@ -7,22 +7,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    {% feed_meta %}
+    {% seo %}
     <title>{{page.title}}</title>
   </head>
   <body>
-    <div>
+    <div class="nav-links">
       {% include navigation.html %}
     </div>
-    <section>
-        <img src="">
-        <p><em>{{page.catchphrase}}</em></p>
-        <hr>
-    </section>
-    <div class="intro">
-      {{content}}
-      <div></div>
+    <div class="profile-section">
+      <img class="profile-image" src="https://avatars.githubusercontent.com/u/193754305?v=4" alt="Profile Image">
+      <div class="profile-content">
+        {{content}}
+        <br>
+        <div class="social-links">
+          <a href="https://github.com/birthofq" target="_blank">
+            <img src="/assets/icons/github.svg" alt="GitHub">
+          </a>
+          <a href="https://twitter.com/beegbelly" target="_blank">
+            <img src="/assets/icons/twitter.svg" alt="Twitter">
+          </a>
+          <!-- <a href="https://linkedin.com/in/yourusername" target="_blank">
+            <img src="/assets/icons/linkedin.svg" alt="LinkedIn">
+          </a> -->
+        </div>
+      </div>
     </div>
-    <h2>Ongoing Projects</h2>
+    
+    <h2>Projects</h2>
     <ul>
       {% for project in site.data.projects %}
       {%- if project.status == "ongoing" -%}
@@ -31,8 +43,8 @@
           {{project.name}} :
         </a>
         <em>{{project.status}}</em>
-      </li>
       <p>{{project.desc}}</p>
+    </li>
       {%- endif -%}
       {% endfor %}
     </ul>
