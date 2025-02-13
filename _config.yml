@@ -8,4 +8,4 @@ plugins:
   - jekyll-seo-tag
 
 url: "https://birthofq.github.io"
-baseurl: "/birthofq.github.io"
+baseurl: ""
