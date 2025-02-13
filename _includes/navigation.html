@@ -1,11 +1,11 @@
-<nav>
-  <div>
-    <img src="">
-  </div>
-  <a href="/">Home</a>
-  <a href="/blog.html">Blog</a>
-  <a href="/library.html">Library</a>
-  <a href="/finds.html">Finds</a>
-  <a href="/projects.html">Projects</a>
-</nav>
+<header>
+  <nav>
+    {% for nav in site.data.navigation %}
+    <a href="{{nav.link}}" {% if page.url == nav.link %} class="nav-links" {%endif%}>{{nav.name}}</a>
+    {%endfor%}
+    <div>
+      <img src="">
+    </div>
+  </nav>
+</header>
 
