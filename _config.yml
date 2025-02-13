@@ -7,3 +7,4 @@ plugins:
   - jekyll-seo-tag
 
 url: "https://birthofq.github.io"
+baseurl: ""
