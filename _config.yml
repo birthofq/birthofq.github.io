@@ -6,4 +6,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-baseurl: birthofq.github.io
+url: "https://birthofq.github.io"
