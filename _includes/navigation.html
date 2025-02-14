@@ -1,7 +1,7 @@
 <header class="header-class">
   <nav class="nav-class">
     {% for nav in site.data.navigation %}
-    <a href="{{nav.link}}" {% if page.url == nav.link %} class="nav-links" {%endif%}>{{nav.name}}</a>
+    <a href="{{nav.link}}" {% if page.url == nav.link %} class="nav-links current" {%endif%}>{{nav.name}}</a>
     {%endfor%}
     <div>
       <img src="">

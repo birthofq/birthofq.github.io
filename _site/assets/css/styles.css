@@ -1,8 +1,8 @@
-
 /* Global styles */
 * {
   margin: 0;
   padding: 0;
+  /* outline: 1px solid red; */
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
@@ -22,8 +22,12 @@ body {
 }
 
 .nav-class {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
+  align-items: center;
+   */
+  display: flex;
+  gap: 1.5rem;
   align-items: center;
   padding: 1rem 0;
   /* No wrap here, so we control it in the media query */
@@ -35,7 +39,7 @@ body {
   align-items: center;
 }
 
-.nav-links a {
+.nav-class a {
   text-decoration: none;
   color: #2563eb;
   margin-right: 1rem;
@@ -43,28 +47,12 @@ body {
   transition: color 0.3s ease;
 }
 
-.nav-links a:last-child {
+.nav-class a:last-child {
   margin-right: 0;
 }
 
-.nav-links a.current {
+.nav-class a.current {
   color: #000;
-}
-
-/* Header content */
-.home-image {
-  margin: 4rem 0;
-}
-
-.home-image hr {
-  border: none;
-  border-top: 1px solid #eee;
-  margin: 2rem 0;
-}
-
-/* Main content */
-.intro {
-  margin-bottom: 4rem;
 }
 
 /* Heading underline styles */
@@ -137,13 +125,15 @@ ul p {
   /* Let the nav wrap so it doesn't overflow horizontally */
   .nav-class {
     flex-wrap: wrap;
+    gap: 1.0rem;
+    padding: 1rem 0;
   }
 
   /* Override the desktop max-width so it fits smaller screens */
-  body {
+  /* body {
     max-width: 100%;
     padding: 1rem;
-  }
+  } */
 
   h1 {
     font-size: 2.5rem;
@@ -154,12 +144,12 @@ ul p {
   }
 
   .nav-links {
-    gap: 1rem; /* Reduced gap on mobile */
+    gap: 0.8rem; /* Reduced gap on mobile */
   }
 
   .nav-links a {
     margin-right: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   /* Make sure blog text fits well on smaller screens */
@@ -189,7 +179,7 @@ ul p {
 .profile-section img {
   width: 250px;         /* Adjust as needed */
   height: auto;
-  border-radius: 12px;  /* Curved corners */
+  border-radius: 14px;  /* Curved corners */
   object-fit: cover;    /* Ensures the image doesn't stretch */
 }
 
