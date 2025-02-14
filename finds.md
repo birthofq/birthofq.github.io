@@ -1,5 +1,6 @@
 ---
 layout: finds
+title: Finds
 ---
 
 # Finds 🔗

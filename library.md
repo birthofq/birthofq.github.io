@@ -1,5 +1,6 @@
 ---
 layout: library
+title: Library
 ---
 
 # Library 📚
