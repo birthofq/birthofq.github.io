@@ -94,7 +94,7 @@ a:hover {
 
 /* Blog or Project list styling */
 ul {
-  list-style: none;
+  /* list-style: none; */
   margin-bottom: 2rem;
 }
 
