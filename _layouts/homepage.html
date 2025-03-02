@@ -43,7 +43,7 @@
       {% for project in site.data.projects %}
       {%- if project.status == "ongoing" -%}
       <li>
-        <a href="https://www.github.com/{{project.link}}">
+        <a href="https://{{project.link}}">
           {{project.name}} :
         </a>
         <em>{{project.status}}</em>

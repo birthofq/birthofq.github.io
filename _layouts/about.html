@@ -19,20 +19,9 @@
     <div class="nav-links">
       {% include navigation.html %}
     </div>
-    <p>{{content}}</p>
-    <br>
     <div>
-      <h2>Links</h2>
-      <ul>
-        {% for link in site.data.links %}
-        <li>
-          <a href="https://www.{{link.url}}">
-            {{link.name}}
-          </a>
-          : {{link.desc}}
-          </li>
-          {% endfor %}
-      </ul>
+      <h1>About Me ✍🏾</h1>
     </div>
+    <p>{{content}}</p>
   </body>
 </html>
