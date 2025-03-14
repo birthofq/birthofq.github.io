@@ -1,16 +1,8 @@
-- name: this project
-  desc: this is a short description of the project, it should be about a few lines long at least.
-  link: birthofq
-  status: completed
-- name: this project
-  desc: this is a short description of the project, it should be about a few lines long at least.
-  link: birthofq
-  status: completed
 - name: gov-db
   desc: An open-source government data platform for tracking and mapping govt information including public officials, policies, and responsibilities in Nigeria, from the grassroot to federal level.
   link: github.com/civiclab-ng/gov-db
   status: ongoing
-- name: this project
-  desc: this is a short description of the project, it should be about a few lines long at least.
-  link: birthofq
+- name: cluster.community
+  desc: Cluster.community is a project that utilizes semantic tag-based matching to connect people based on shared interests, values, hobbies, and sexuality. Instead of relying on traditional profiles, users define themselves with structured tags, categorized into hobbies, interests, values, and sexuality, each with customizable visibility settings.
+  link: github.com/q-corpo/interest-community
   status: ongoing
