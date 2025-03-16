@@ -1,1 +1,114 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-03-14T13:25:56+01:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Intelligent Social Matching With Semantic Tagging</title><link href="http://localhost:4000/2025/03/14/intelligent-social-matching-with-semantic-tagging.html" rel="alternate" type="text/html" title="Intelligent Social Matching With Semantic Tagging" /><published>2025-03-14T00:00:00+01:00</published><updated>2025-03-14T00:00:00+01:00</updated><id>http://localhost:4000/2025/03/14/intelligent-social-matching-with-semantic-tagging</id><content type="html" xml:base="http://localhost:4000/2025/03/14/intelligent-social-matching-with-semantic-tagging.html"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-03-16T07:28:05+01:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Intelligent Social Matching With Semantic Tagging</title><link href="http://localhost:4000/2025/03/14/intelligent-social-matching-with-semantic-tagging.html" rel="alternate" type="text/html" title="Intelligent Social Matching With Semantic Tagging" /><published>2025-03-14T00:00:00+01:00</published><updated>2025-03-14T00:00:00+01:00</updated><id>http://localhost:4000/2025/03/14/intelligent-social-matching-with-semantic-tagging</id><content type="html" xml:base="http://localhost:4000/2025/03/14/intelligent-social-matching-with-semantic-tagging.html"><![CDATA[<p>Anyone who’s built social networks or recommendation systems knows the struggle: How do you get the right content to the right people? The traditional approach involves hoarding massive amounts of user data and feeding it into increasingly complex algorithms that then try to guess what people want, or who they want to see or connect with based on their behavior.</p>
+
+<p>After thinking about this problem for a while, I thought to try a radically different approach. Instead of trying to read users’ minds through their clicks and scrolls, why not just <em>ask them</em> what they want? My focus in this article is to describe how I’m trying to build (and also how anyone can build) a system that lets people explicitly state what they’re looking for in connections, and matches them directly with people who fit those criteria. No algorithmic black boxes, no creepy data collection.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul>
+  <li><a href="#capturing-user-intent-accurately">Capturing User Intent Accurately</a></li>
+  <li><a href="#semantic-tagging">Semantic Tagging</a></li>
+  <li><a href="#intelligent-semantic-tagging-system">Intelligent Semantic Tagging System</a></li>
+  <li><a href="#steps-in-implementation">Steps in Implementation</a>
+    <ul>
+      <li><a href="#design-and-implement-tags-and-validation-rules">Design and Implement Tags &amp; Validation Rules</a></li>
+      <li><a href="#experiment-with-direct-tag-matching">Experiment with Direct Tag Matching</a></li>
+      <li><a href="#add-a-semantic-relationship-layer">Add a Semantic Relationship Layer</a></li>
+      <li><a href="#enhance-the-matching-system">Enhance the Matching System</a></li>
+      <li><a href="#user-behavior-learning">User Behavior Learning</a></li>
+    </ul>
+  </li>
+  <li><a href="#conclusion">Conclusion</a></li>
+  <li><a href="#further-research">Further Research</a></li>
+</ul>
+
+<h2 id="capturing-user-intent-accurately">Capturing User Intent Accurately</h2>
+
+<p>The tricky part, of course, is figuring out how to let users tell you what they want without making it feel like they’re filling out a tax form. How do you capture complex human preferences in a way that’s both accurate and painless? From a user experience point of view, how many clicks / actions does it take for a user to give ideally a complete picture of what they want in connections or communities.</p>
+
+<p>This is where semantic tagging comes in. I’ve been obsessed with this approach lately, and I want to share how it might be an out of the box alternative to the way we design networks that connect people with other people, communities, and ideas.</p>
+
+<h2 id="semantic-tagging">Semantic Tagging</h2>
+
+<p>At its heart, semantic tagging is beautifully simple: using carefully chosen words to convey maximum meaning with minimum effort.</p>
+
+<p>Let’s use a simple example. Say you’re building a platform for sports fans, you might have tag categories like “favorite sports,” “favorite players,” and “favorite coaches.” A user could tag their profile with “soccer,” “Messi,” and “Guardiola,” while another might choose “soccer,” “Ronaldo,” and “Alex Ferguson.” The system compares these tags and instantly understands something meaningful about both users and can fairly predict a possibility of a potential connection between them.</p>
+
+<p>Sounds straightforward, right? Well there’s a glaring problem with just relying on directly mapping / comparing tags of users in the network. <em>Scale</em>.
+Even just taking the sports domain alone, accurately mapping all potential interests would require thousands upon thousands of tags, and without some intelligence behind the system, you’ll quickly run into problems like redundancy (is “football” the same as “soccer”?) and data inconsistencies that diminish the quality of connections.</p>
+
+<h2 id="intelligent-semantic-tagging-system">Intelligent Semantic Tagging System</h2>
+
+<p>What we really need is a system smart enough to take two sets of tags and figure out how closely they align, even if they don’t match word for word. I’ve been playing with the idea of building exactly this kind of system, one that helps people form meaningful connections with as little friction as possible.</p>
+
+<h2 id="steps-in-implementation">Steps in Implementation</h2>
+
+<h3 id="design-and-implement-tags--validation-rules">Design and Implement Tags &amp; Validation Rules</h3>
+
+<p>First things first, we need to define what tags actually mean in our system. They’re not just random words they’re semantic units that carry specific meaning within categories and relationships.</p>
+
+<p>This stage requires spending some time to hammer out validation rules, like character limits (nobody wants to read paragraph long tags), prohibited symbols (to prevent gaming the system), and duplicate prevention (because having both “football” and “Football” is just annoying).</p>
+
+<h3 id="experiment-with-direct-tag-matching">Experiment with Direct Tag Matching</h3>
+
+<p>Once the foundation is in place, the next logical step would be to let users run wild on the system. When creating their profiles, they could select existing tags or create new ones.</p>
+
+<p>Pro tip: Always show users existing tags before letting them create new ones. This dramatically reduces redundancy and helps build a cleaner dataset.</p>
+
+<p>At this phase, you should start to get ideas about how people naturally describe their interests, and take note to begin thinking about more robust semantic rules for later stages in the system’s development. For instance, you might notice that sports fans often tag specific events (“World Cup 2022”) rather than just general categories (“soccer tournaments”).</p>
+
+<h3 id="add-a-semantic-relationship-layer">Add a Semantic Relationship Layer</h3>
+
+<p>This is where things get interesting. At this stage you’re ready to integrate a lexical database to add more meaningful representations to users’ tags. A lexical database at it’s core is basically an organized collection of words, their meanings, and the relationships between them. Good thing there already exists the perfect lexical database you can implement in this phase - <em>WordNet</em>. From the project homepage, the creators of WordNet (folks at Princeton) define it as “a large lexical database of English (where) nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept.”</p>
+
+<p>Now you might be wondering, why wait to implement a lexical database when you can just integrate it from the get go and immediately be able to model user tag relationships and their meanings. Well there are a few reasons I thought about that made me ultimately decide to wait on the implementation:</p>
+
+<p>First, implementing a full semantic layer on day one not only adds more complexity to the development of the system, but it also forces you to build semantic relationships with a lot of guessing and hand waiving alone.</p>
+
+<p>Second, observing how users reason about and choose tags to represent information is relevant in the early stages, to know what tags matter to them and also because user tags might not always directly map cleanly to standardized English words, i.e slangs might be employed more times than expected.</p>
+
+<p>Now after the integration of a lexical database, when someone tags themselves with “football” and another person uses “soccer,” the system recognizes they’re talking about the same thing (at least in most countries!). This seemingly simple improvement dramatically increases the quality of connections.</p>
+
+<h3 id="enhance-the-matching-system">Enhance the Matching System</h3>
+
+<p>Next comes the algorithms for calculating similarity between profiles. Not all tag matches are created equal. A direct match on a niche interest (like “underwater hockey”) should probably count for more than matching on something broad like “sports.”</p>
+
+<p>It might be helpful to implement a weighted scoring system and add crucial feedback mechanisms so when users receive connection suggestions, they can rate their relevance, helping the system learn from its mistakes.</p>
+
+<h3 id="user-behavior-learning">User Behavior Learning</h3>
+
+<p>The longer people use the system, the smarter it gets. If someone consistently connects with others based on their “jazz music” tag but ignores connections based on their “cooking” tag, the system learns to prioritize music based connections for them.</p>
+
+<p>I’ve seen this kind of behavioral learning transform a good matching system into an exceptional one. It’s like having thousands of tiny personalization knobs that adjust themselves.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>There’s still plenty to improve in the system even at this stage. We need granular controls over who sees what in the network (users shouldn’t be able to see other users’ tags unless they fit the requirements for becoming a viable match) coupled with configurable visibility settings as some tags might communicate information users might deem sensitive. Security is also another big concern as data needs to be properly obfuscated / protected to prevent bad actors from piecing together information about network participants.</p>
+
+<p>Semantic tagging isn’t just an interesting concept in itself but I’m convinced that it offers a more transparent, cheaper and ethical approach to connecting people, ideas and communities in a network as opposed to the black box recommendation algorithms used in popular social media networks. By focusing on explicit user intent rather than inferred preferences, we can build systems that respect user agency while still being incredibly effective at fostering meaningful connections.</p>
+
+<p>I’ll write more blogs throughout my experimentation with the idea and document whatever technical or non-technical issues I face during implementation.</p>
+
+<p>If you’re building social features into your product, give semantic tagging a serious look, and if you think there are ways to optimize the system even further, or you already went down this rabbit hole and have suggestions or tricks or even warnings about problems that could arise in a system like this, feel free to reach out let’s have a chat !</p>
+
+<h2 id="further-research">Further Research</h2>
+
+<p>If you’re interested in researching further on the topic or are interested in seeing applications of forms of semantic tagging in consumer applications and publicly available projects, be sure to check out the following links:</p>
+
+<ul>
+  <li>
+    <p><a href="https://joinmastodon.org/">Mastodon</a> :
+A decentralized social network relies on hashtags that function as semantic tags to help users discover content across different instances.</p>
+  </li>
+  <li>
+    <p><a href="https://lunchclub.com/">Lunchclub</a> :
+Uses AI matching with semantic understanding of users’ natural language descriptions of their goals and interests to facilitate meaningful professional connections.</p>
+  </li>
+  <li>
+    <p><a href="https://hinge.co">Hinge</a>
+The dating app uses prompt-based “tags” that allow users to match based on specific conversation topics and shared interests rather than superficial traits.</p>
+  </li>
+  <li>
+    <p><a href="https://wordnet.princeton.edu/">WordNet</a>
+WordNet® is a large lexical database of English. Nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept.</p>
+  </li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Anyone who’s built social networks or recommendation systems knows the struggle: How do you get the right content to the right people? The traditional approach involves hoarding massive amounts of user data and feeding it into increasingly complex algorithms that then try to guess what people want, or who they want to see or connect with based on their behavior.]]></summary></entry></feed>
