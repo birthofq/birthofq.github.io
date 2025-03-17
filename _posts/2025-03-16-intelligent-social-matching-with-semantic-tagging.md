@@ -1,5 +1,6 @@
 ---
 layout: post
+title: intelligent social matching with semantic tagging
 ---
 
 Anyone who's built social networks or recommendation systems knows the struggle: How do you get the right content to the right people? The traditional approach involves hoarding massive amounts of user data and feeding it into increasingly complex algorithms that then try to guess what people want, or who they want to see or connect with based on their behavior.
@@ -49,7 +50,7 @@ This stage requires spending some time to hammer out validation rules, like char
 
 ### Experiment with Direct Tag Matching
 
-Once the foundation is in place, the next logical step would be to design simple user connection rules for the system and then letting users start creating tags and tag relationships. When creating their profiles, they could select existing tags or create new ones.
+Once the foundation is in place, the next logical step would be to design simple user connection rules for the system and then let users start creating tags and tag relationships. When creating their profiles, they could select existing tags or create new ones.
 
 Pro tip: Always show users existing tags before letting them create new ones. This dramatically reduces redundancy and helps build a cleaner dataset.
 
