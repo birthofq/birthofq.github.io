@@ -49,11 +49,11 @@ This stage requires spending some time to hammer out validation rules, like char
 
 ### Experiment with Direct Tag Matching
 
-Once the foundation is in place, the next logical step would be to let users run wild on the system. When creating their profiles, they could select existing tags or create new ones.
+Once the foundation is in place, the next logical step would be to design simple user connection rules for the system and then letting users start creating tags and tag relationships. When creating their profiles, they could select existing tags or create new ones.
 
 Pro tip: Always show users existing tags before letting them create new ones. This dramatically reduces redundancy and helps build a cleaner dataset.
 
-At this phase, you should start to get ideas about how people naturally describe their interests, and take note to begin thinking about more robust semantic rules for later stages in the system's development. For instance, you might notice that sports fans often tag specific events ("World Cup 2022") rather than just general categories ("soccer tournaments").
+Once users begin interacting with the system and creating tag relationships, you should start getting ideas and taking note of how people naturally describe their interests. This will help you start thinking about more robust semantic rules for later stages of the system’s development. For instance, you might notice that sports fans often tag specific events (“World Cup 2022”) rather than just general categories (“soccer tournaments”).
 
 ### Add a Semantic Relationship Layer
 
@@ -61,7 +61,7 @@ This is where things get interesting. At this stage you're ready to integrate a 
 
 Now you might be wondering, why wait to implement a lexical database when you can just integrate it from the get go and immediately be able to model user tag relationships and their meanings. Well there are a few reasons I thought about that made me ultimately decide to wait on the implementation:
 
-First, implementing a full semantic layer on day one not only adds more complexity to the development of the system, but it also forces you to build semantic relationships with a lot of guessing and hand waiving alone.
+First, implementing a full semantic layer on day one not only adds more complexity to the development of the system, but it also forces you to build semantic relationships with a lot of guessing and hand waving alone.
 
 Second, observing how users reason about and choose tags to represent information is relevant in the early stages, to know what tags matter to them and also because user tags might not always directly map cleanly to standardized English words, i.e slangs might be employed more times than expected.
 
@@ -83,7 +83,7 @@ I've seen this kind of behavioral learning transform a good matching system into
 
 There's still plenty to improve in the system even at this stage. We need granular controls over who sees what in the network (users shouldn't be able to see other users' tags unless they fit the requirements for becoming a viable match) coupled with configurable visibility settings as some tags might communicate information users might deem sensitive. Security is also another big concern as data needs to be properly obfuscated / protected to prevent bad actors from piecing together information about network participants.
 
-Semantic tagging isn't just an interesting concept in itself but I'm convinced that it offers a more transparent, cheaper and ethical approach to connecting people, ideas and communities in a network as opposed to the black box recommendation algorithms used in popular social media networks. By focusing on explicit user intent rather than inferred preferences, we can build systems that respect user agency while still being incredibly effective at fostering meaningful connections.
+Semantic tagging isn't just an interesting concept in itself but I'm convinced that it offers a cheaper, ethical, and more transparent approach to connecting people, ideas and communities in a network as opposed to the black box recommendation algorithms used in popular social media networks. By focusing on explicit user intent rather than inferred preferences, we can build systems that respect user agency while still being incredibly effective at fostering meaningful connections.
 
 I'll write more blogs throughout my experimentation with the idea and document whatever technical or non-technical issues I face during implementation.
 
