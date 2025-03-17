@@ -23,7 +23,7 @@ After thinking about this problem for a while, I thought to try a radically diff
 
 ## Capturing User Intent Accurately
 
-The tricky part, of course, is figuring out how to let users tell you what they want without making it feel like they're filling out a tax form. How do you capture complex human preferences in a way that's both accurate and painless? From a user experience point of view, how many clicks / actions does it take for a user to give ideally a complete picture of what they want in connections or communities.
+The tricky part, of course, is figuring out how to let users tell you what they want without making it feel like they're filling out a tax form. How do you capture complex human preferences in a way that's both accurate and painless? From a user experience point of view, how many clicks / actions does it take for a user to give ideally a complete picture of what they want in connections or communities?
 
 This is where semantic tagging comes in. I've been obsessed with this approach lately, and I want to share how it might be an out of the box alternative to the way we design networks that connect people with other people, communities, and ideas.
 
@@ -33,7 +33,7 @@ At its heart, semantic tagging is beautifully simple: using carefully chosen wor
 
 Let's use a simple example. Say you're building a platform for sports fans, you might have tag categories like "favorite sports," "favorite players," and "favorite coaches." A user could tag their profile with "soccer," "Messi," and "Guardiola," while another might choose "soccer," "Ronaldo," and "Alex Ferguson." The system compares these tags and instantly understands something meaningful about both users and can fairly predict a possibility of a potential connection between them.
 
-Sounds straightforward, right? Well there's a glaring problem with just relying on directly mapping / comparing tags of users in the network. _Scale_.
+Sounds straightforward, right? Well, there's a glaring problem with just relying on directly mapping / comparing tags of users in the network. _Scale_.
 Even just taking the sports domain alone, accurately mapping all potential interests would require thousands upon thousands of tags, and without some intelligence behind the system, you'll quickly run into problems like redundancy (is "football" the same as "soccer"?) and data inconsistencies that diminish the quality of connections.
 
 ## Intelligent Semantic Tagging System
@@ -44,9 +44,9 @@ What we really need is a system smart enough to take two sets of tags and figure
 
 ### Design and Implement Tags & Validation Rules
 
-First things first, we need to define what tags actually mean in our system. They're not just random words they're semantic units that carry specific meaning within categories and relationships.
+First things first, we need to define what tags actually mean in our system. They're not just random words, they're semantic units that carry specific meaning within categories and relationships.
 
-This stage requires spending some time to hammer out validation rules, like character limits (nobody wants to read paragraph long tags), prohibited symbols (to prevent gaming the system), and duplicate prevention (because having both "football" and "Football" is just annoying).
+This stage requires spending some time to hammer out validation rules, like character limits (nobody wants to read paragraph-long tags), prohibited symbols (to prevent gaming the system), and duplicate prevention (because having both "football" and "Football" is just annoying).
 
 ### Experiment with Direct Tag Matching
 
@@ -58,13 +58,13 @@ Once users begin interacting with the system and creating tag relationships, you
 
 ### Add a Semantic Relationship Layer
 
-This is where things get interesting. At this stage you're ready to integrate a lexical database to add more meaningful representations to users' tags. A lexical database at it's core is basically an organized collection of words, their meanings, and the relationships between them. Good thing there already exists the perfect lexical database you can implement in this phase - _WordNet_. From the project homepage, the creators of WordNet (folks at Princeton) define it as "a large lexical database of English (where) nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept."
+This is where things get interesting. At this stage, you're ready to integrate a lexical database to add more meaningful representations to users' tags. A lexical database at its core is basically an organized collection of words, their meanings, and the relationships between them. Good thing there already exists the perfect lexical database you can implement in this phase - _WordNet_. From the project homepage, the creators of WordNet (folks at Princeton) define it as "a large lexical database of English (where) nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept."
 
-Now you might be wondering, why wait to implement a lexical database when you can just integrate it from the get go and immediately be able to model user tag relationships and their meanings. Well there are a few reasons I thought about that made me ultimately decide to wait on the implementation:
+Now you might be wondering, why wait to implement a lexical database when you can just integrate it from the get-go and immediately be able to model user tag relationships and their meanings. Well there are a few reasons I thought about that made me ultimately decide to wait on the implementation:
 
-First, implementing a full semantic layer on day one not only adds more complexity to the development of the system, but it also forces you to build semantic relationships with a lot of guessing and hand waving alone.
+First, implementing a full semantic layer on day one not only adds more complexity to the development of the system, but it also forces you to build semantic relationships with a lot of guessing and hand-waving alone.
 
-Second, observing how users reason about and choose tags to represent information is relevant in the early stages, to know what tags matter to them and also because user tags might not always directly map cleanly to standardized English words, i.e slangs might be employed more times than expected.
+Second, observing how users reason about and choose tags to represent information is relevant in the early stages, to know what tags matter to them and also because user tags might not always directly map cleanly to standardized English words, i.e, slang might be employed more times than expected.
 
 Now after the integration of a lexical database, when someone tags themselves with "football" and another person uses "soccer," the system recognizes they're talking about the same thing (at least in most countries!). This seemingly simple improvement dramatically increases the quality of connections.
 
@@ -76,7 +76,7 @@ It might be helpful to implement a weighted scoring system and add crucial feedb
 
 ### User Behavior Learning
 
-The longer people use the system, the smarter it gets. If someone consistently connects with others based on their "jazz music" tag but ignores connections based on their "cooking" tag, the system learns to prioritize music based connections for them.
+The longer people use the system, the smarter it gets. For example, if someone consistently connects with others based on their "jazz music" tag but ignores connections based on their "cooking" tag, the system learns to prioritize music-based connections for them.
 
 I've seen this kind of behavioral learning transform a good matching system into an exceptional one. It's like having thousands of tiny personalization knobs that adjust themselves.
 
@@ -88,7 +88,7 @@ Semantic tagging isn't just an interesting concept in itself but I'm convinced t
 
 I'll write more blogs throughout my experimentation with the idea and document whatever technical or non-technical issues I face during implementation.
 
-If you're building social features into your product, give semantic tagging a serious look, and if you think there are ways to optimize the system even further, or you already went down this rabbit hole and have suggestions or tricks or even warnings about problems that could arise in a system like this, feel free to reach out let's have a chat !
+If you're building social features into your product, give semantic tagging a serious look, and if you think there are ways to optimize the system even further, or you already went down this rabbit hole and have suggestions or tricks or even warnings about problems that could arise in a system like this, feel free to reach out. I would love to have a chat !
 
 ## Further Research
 
