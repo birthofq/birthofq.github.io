@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-03-17T11:39:56+01:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">intelligent social matching with semantic tagging</title><link href="http://localhost:4000/2025/03/16/intelligent-social-matching-with-semantic-tagging.html" rel="alternate" type="text/html" title="intelligent social matching with semantic tagging" /><published>2025-03-16T00:00:00+01:00</published><updated>2025-03-16T00:00:00+01:00</updated><id>http://localhost:4000/2025/03/16/intelligent-social-matching-with-semantic-tagging</id><content type="html" xml:base="http://localhost:4000/2025/03/16/intelligent-social-matching-with-semantic-tagging.html"><![CDATA[<p>Anyone who’s built social networks or recommendation systems knows the struggle: How do you get the right content to the right people? The traditional approach involves hoarding massive amounts of user data and feeding it into increasingly complex algorithms that then try to guess what people want, or who they want to see or connect with based on their behavior.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-14T18:27:56+01:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Intelligent Social Matching with Semantic Tagging</title><link href="http://localhost:4000/2025/03/16/intelligent-social-matching-with-semantic-tagging.html" rel="alternate" type="text/html" title="Intelligent Social Matching with Semantic Tagging" /><published>2025-03-16T00:00:00+01:00</published><updated>2025-03-16T00:00:00+01:00</updated><id>http://localhost:4000/2025/03/16/intelligent-social-matching-with-semantic-tagging</id><content type="html" xml:base="http://localhost:4000/2025/03/16/intelligent-social-matching-with-semantic-tagging.html"><![CDATA[<p>Anyone who’s built social networks or recommendation systems knows the struggle: How do you get the right content to the right people? The traditional approach involves hoarding massive amounts of user data and feeding it into increasingly complex algorithms that then try to guess what people want, or who they want to see or connect with based on their behavior.</p>
 
 <p>After thinking about this problem for a while, I thought to try a radically different approach. Instead of trying to read users’ minds through their clicks and scrolls, why not just <em>ask them</em> what they want? My focus in this article is to describe how I’m trying to build (and also how anyone can build) a system that lets people explicitly state what they’re looking for in connections, and matches them directly with people who fit those criteria. No algorithmic black boxes, no creepy data collection.</p>
 
@@ -88,27 +88,4 @@ Even just taking the sports domain alone, accurately mapping all potential inter
 
 <p>I’ll write more blogs throughout my experimentation with the idea and document whatever technical or non-technical issues I face during implementation.</p>
 
-<p>If you’re building social features into your product, give semantic tagging a serious look, and if you think there are ways to optimize the system even further, or you already went down this rabbit hole and have suggestions or tricks or even warnings about problems that could arise in a system like this, feel free to reach out. I would love to have a chat !</p>
-
-<h2 id="further-research">Further Research</h2>
-
-<p>If you’re interested in researching further on the topic or are interested in seeing applications of forms of semantic tagging in consumer applications and publicly available projects, be sure to check out the following links:</p>
-
-<ul>
-  <li>
-    <p><a href="https://joinmastodon.org/">Mastodon</a> :
-A decentralized social network relies on hashtags that function as semantic tags to help users discover content across different instances.</p>
-  </li>
-  <li>
-    <p><a href="https://lunchclub.com/">Lunchclub</a> :
-Uses AI matching with semantic understanding of users’ natural language descriptions of their goals and interests to facilitate meaningful professional connections.</p>
-  </li>
-  <li>
-    <p><a href="https://hinge.co">Hinge</a>
-The dating app uses prompt-based “tags” that allow users to match based on specific conversation topics and shared interests rather than superficial traits.</p>
-  </li>
-  <li>
-    <p><a href="https://wordnet.princeton.edu/">WordNet</a>
-WordNet® is a large lexical database of English. Nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept.</p>
-  </li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Anyone who’s built social networks or recommendation systems knows the struggle: How do you get the right content to the right people? The traditional approach involves hoarding massive amounts of user data and feeding it into increasingly complex algorithms that then try to guess what people want, or who they want to see or connect with based on their behavior.]]></summary></entry></feed>
+<p>If you’re building social features into your product, give semantic tagging a serious look, and if you think there are ways to optimize the system even further, or you already went down this rabbit hole and have suggestions or tricks or even warnings about problems that could arise in a system like this, feel free to reach out. I would love to have a chat !</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Anyone who’s built social networks or recommendation systems knows the struggle: How do you get the right content to the right people? The traditional approach involves hoarding massive amounts of user data and feeding it into increasingly complex algorithms that then try to guess what people want, or who they want to see or connect with based on their behavior.]]></summary></entry></feed>

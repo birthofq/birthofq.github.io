@@ -1,6 +1,6 @@
 ---
 layout: post
-title: intelligent social matching with semantic tagging
+title: Intelligent Social Matching with Semantic Tagging
 ---
 
 Anyone who's built social networks or recommendation systems knows the struggle: How do you get the right content to the right people? The traditional approach involves hoarding massive amounts of user data and feeding it into increasingly complex algorithms that then try to guess what people want, or who they want to see or connect with based on their behavior.
@@ -89,19 +89,3 @@ Semantic tagging isn't just an interesting concept in itself but I'm convinced t
 I'll write more blogs throughout my experimentation with the idea and document whatever technical or non-technical issues I face during implementation.
 
 If you're building social features into your product, give semantic tagging a serious look, and if you think there are ways to optimize the system even further, or you already went down this rabbit hole and have suggestions or tricks or even warnings about problems that could arise in a system like this, feel free to reach out. I would love to have a chat !
-
-## Further Research
-
-If you're interested in researching further on the topic or are interested in seeing applications of forms of semantic tagging in consumer applications and publicly available projects, be sure to check out the following links:
-
-- [Mastodon](https://joinmastodon.org/) :
-  A decentralized social network relies on hashtags that function as semantic tags to help users discover content across different instances.
-
-- [Lunchclub](https://lunchclub.com/) :
-  Uses AI matching with semantic understanding of users' natural language descriptions of their goals and interests to facilitate meaningful professional connections.
-
-- [Hinge](https://hinge.co)
-  The dating app uses prompt-based "tags" that allow users to match based on specific conversation topics and shared interests rather than superficial traits.
-
-- [WordNet](https://wordnet.princeton.edu/)
-  WordNet® is a large lexical database of English. Nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept.
