@@ -349,7 +349,7 @@ pre code {
 }
 
 /* Dark mode */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body.dark-mode {
     background-color: #1f2937;
     color: #e5e7eb;
@@ -409,4 +409,4 @@ pre code {
   body.dark-mode .semantic-tags h3 {
     color: #60a5fa;
   }
-}
+} */
