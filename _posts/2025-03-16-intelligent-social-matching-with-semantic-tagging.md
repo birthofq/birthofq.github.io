@@ -7,7 +7,7 @@ Anyone who's built social networks or recommendation systems knows the struggle:
 
 After thinking about this problem for a while, I thought to try a radically different approach. Instead of trying to read users' minds through their clicks and scrolls, why not just _ask them_ what they want? My focus in this article is to describe how I'm trying to build (and also how anyone can build) a system that lets people explicitly state what they're looking for in connections, and matches them directly with people who fit those criteria. No algorithmic black boxes, no creepy data collection.
 
-## Contents
+## Sections
 
 - [Capturing User Intent Accurately](#capturing-user-intent-accurately)
 - [Semantic Tagging](#semantic-tagging)

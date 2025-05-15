@@ -1,11 +1,13 @@
 <header class="header-class">
   <nav class="nav-class">
-    {% for nav in site.data.navigation %}
-    <a href="{{nav.link}}" {% if page.url == nav.link %} class="nav-links current" {%endif%}>{{nav.name}}</a>
-    {%endfor%}
-    <div>
-      <img src="">
+    <div class="nav-links">
+      {% for nav in site.data.navigation %}
+      <a href="{{nav.link}}" {% if page.url == nav.link %} class="nav-links current" {%endif%}>{{nav.name}}</a>
+      {%endfor%}
     </div>
+    <!-- <div class="theme-toggle">
+      <button id="darkModeToggle">🌙</button>
+    </div> -->
   </nav>
 </header>
 

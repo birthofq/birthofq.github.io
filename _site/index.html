@@ -13,37 +13,37 @@
     <link rel="manifest" href="/assets/icons/site.webmanifest">
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Home</title>
+<title>Home - Nonso John</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Home" />
+<meta property="og:title" content="Home - Nonso John" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Home" />
+<meta property="twitter:title" content="Home - Nonso John" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"Home","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","headline":"Home - Nonso John","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <title>Home</title>
+    <title>Home - Nonso John</title>
   </head>
   <body>
     <div class="nav-links">
       <header class="header-class">
   <nav class="nav-class">
-    
-    <a href="/"  class="nav-links current" >Home</a>
-    
-    <a href="/about.html" >About Me</a>
-    
-    <a href="/projects.html" >Projects</a>
-    
-    <a href="/blog.html" >Blog</a>
-    
-    <div>
-      <img src="">
+    <div class="nav-links">
+      
+      <a href="/"  class="nav-links current" >Home</a>
+      
+      <a href="/projects.html" >Projects</a>
+      
+      <a href="/blog.html" >Blog</a>
+      
     </div>
+    <!-- <div class="theme-toggle">
+      <button id="darkModeToggle">🌙</button>
+    </div> -->
   </nav>
 </header>
 
@@ -53,11 +53,19 @@
       <img class="profile-image" src="https://avatars.githubusercontent.com/u/193754305?v=4" alt="Profile Image">
       <div class="profile-content">
         <div class="content-class">
-        <h2> Chukwunonso John.</h2>
+        <h2> CHUKWUNONSO JOHN.</h2>
+        <hr>
         </div>
         <br>
 <div class="content-class">
-        <p>I enjoy <a href="/projects.html">building</a> things,  <a href="/projects.html">breaking</a> stuff apart to see how and why they work, and turning curiosity into projects.I also enjoy reading a lot and occasionally <a href="/blog.html">I write</a> about whatever I’m working on or thinking about.</p>
+        <p>I enjoy <a href="/projects.html">building</a> software tools that are easy (and ideally fun) to use while solving interesting problems. Apart from programming, I like to explore art, math, music, politics, security and a lot more than I can fit here. I also enjoy reading a lot, and occasionally <a href="/blog.html">I write</a> about whatever I’m working on or thinking about.</p>
+        <br>
+        <h3>Currently Working on...</h3>
+        <hr>
+        <br>
+        <p>
+                Understanding social network design and how intentional design of online spaces can foster positive, adaptive behaviours that are both healthy, and useful in modelling the way we organize as network participants offline.
+        </p>
 </div>
 
 
@@ -86,11 +94,29 @@
       <p>An open-source government data platform for tracking and mapping govt information including public officials, policies, and responsibilities in Nigeria, from the grassroot to federal level.</p>
     </li><li>
         <a href="https://">
-          cluster.community :
+          community tool :
         </a>
         <em>ongoing</em>
-      <p>Cluster.community is a social tool / service that utilizes semantic tag-based matching to connect people based on shared interests, values, hobbies, etc. Instead of relying on traditional profiles, users define themselves with structured but flexible tags, put into appropriate categories, each with customizable visibility settings.</p>
+      <p>A social tool / service that utilizes semantic tag-based matching to connect people based on shared interests, values, hobbies, etc. Instead of relying on traditional profiles, users define themselves with structured but flexible tags, put into appropriate categories, each with customizable visibility settings.</p>
     </li>
     </ul>
+    <script>
+      const toggleButton = document.getElementById('darkModeToggle');
+      const body = document.body;
+    
+      // Apply saved theme on load
+      if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+        toggleButton.textContent = '☀️';
+      }
+    
+      toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        const isDark = body.classList.contains('dark-mode');
+    
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        toggleButton.textContent = isDark ? '☀️' : '🌙';
+      });
+    </script>
   </body>
 </html>

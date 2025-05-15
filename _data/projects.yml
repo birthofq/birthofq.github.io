@@ -2,7 +2,7 @@
   desc: An open-source government data platform for tracking and mapping govt information including public officials, policies, and responsibilities in Nigeria, from the grassroot to federal level.
   link: github.com/civiclab-ng/gov-db
   status: paused
-- name: cluster.community
-  desc: Cluster.community is a social tool / service that utilizes semantic tag-based matching to connect people based on shared interests, values, hobbies, etc. Instead of relying on traditional profiles, users define themselves with structured but flexible tags, put into appropriate categories, each with customizable visibility settings.
+- name: community tool
+  desc: A social tool / service that utilizes semantic tag-based matching to connect people based on shared interests, values, hobbies, etc. Instead of relying on traditional profiles, users define themselves with structured but flexible tags, put into appropriate categories, each with customizable visibility settings.
   # link: github.com/q-corpo/interest-community
   status: ongoing
