@@ -41,7 +41,7 @@
     <h3>Recent Projects</h3>
     <ul>
       {% for project in site.data.projects %}
-      {%- if project.status == "ongoing" -%}
+      {%- if project.status == "ongoing" or project.status == "paused" -%}
       <li>
         <a href="https://{{project.link}}">
           {{project.name}} :
