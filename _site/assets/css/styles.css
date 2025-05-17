@@ -251,8 +251,8 @@ pre code {
 }
 
 .profile-image {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
 }
